@@ -1,0 +1,167 @@
+.main-header{
+    display: none !important;
+}
+.common-structure > *:not(.main-header):not(.user-nav){
+    padding: 0 !important;
+}
+body{
+    background: var(--abalance1) !important;
+}
+.newPost{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 50px;
+    width: 100%;
+    flex-direction: column;
+
+    .hader_top{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #dddd;
+        padding: 5px;
+        i{
+            font-size: 25px;
+            color: #139CF8;
+        }
+        button{
+            background: #139CF8;
+            color: white;
+            border-radius: 7px;
+            padding: 10px;
+        }
+    }
+    .card_t{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 20px;
+        img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    }
+    .wrapper{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+        .header_mr{
+            background: #139CF8;
+            width: 100%;
+            color: white;
+            border-radius: var(--size2) var(--size2) 0 0;
+            .title{
+                padding: 15px;
+            }
+        }
+        .body_mr{
+            width: 100%;
+            padding-top: 0;
+            img{
+                border-radius: 7px;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            li{
+                border-top: 1px solid #dddd;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                list-style: none;
+                padding: 10px 20px;
+                gap: 10px;
+                i{
+                    color: #139CF8;
+                    font-size: 25px;
+                }
+                cursor: pointer;
+            }
+            li:nth-child(5) i{
+                color: green;
+            }
+            li:nth-child(6) i{
+                color: red;
+            }
+            .action{
+                padding-top: 15px;
+                padding-bottom: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 25px;
+                span{
+                    i{
+                        font-size: 20px;
+                    }
+                }
+                span.active{
+                    color: #139CF8;
+                }
+            }
+            .button{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .left{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    gap: 10px;
+                    button{
+                        background: #139CF8;
+                        color: white;
+                        border-radius: var(--size2);
+                        padding: 10px 20px;
+                    }
+                    #file{
+                        opacity: 0;
+                    }
+                }
+                i{
+                    font-size: 25px;
+                    color:#139CF8;
+                }
+            }
+            .content{
+                width: 100%;
+                resize: none;
+                height: 200px;
+                padding: 20px;
+                outline: none;
+                resize: none;
+                border: none;
+            }
+        }
+    }
+}
+
+.aaa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: var(--size3) var(--size4);
+    padding-block-end: var(--size1);
+    margin-block-end: var(--size4);
+    background-color: var(--abalance1);
+    border-radius: var(--size2);
+    box-shadow: 0 1px 2px var(--balance4);
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px){
+.common-structure {
+    grid-template-areas:
+        "main" !important;
+    grid-template-columns: 100% !important;
+}
+}

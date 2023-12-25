@@ -1,0 +1,36 @@
+#History{
+    .container{
+        // header_mr st
+        .header_mr{
+            margin-bottom: 1.5rem;
+            .main-header{
+                text-align: center;
+                padding: var(--size3);
+                background-color: var(--abalance1);
+                border-radius: var(--size2);
+                box-shadow: 0 1px 2px var(--balance4);
+            }
+        }
+        // header_mr end
+
+        // footer_mr st
+        .footer_mr{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 15px;
+            margin-top: 2.5rem;
+            margin-top: 20px;
+            .items{
+                padding: var(--size3);
+                background-color: var(--abalance1);
+                border-radius: var(--size2);
+                box-shadow: 0 1px 2px var(--balance4);
+                img{
+                    width: 100%;
+                    border-radius: var(--border-radius);
+                }
+            }
+        }
+        // footer_mr end
+    }
+ }

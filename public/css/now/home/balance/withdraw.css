@@ -1,0 +1,106 @@
+body {
+  background: linear-gradient(0deg, #71a5ad, #e7e7e7);
+}
+
+footer.footer_header {
+  background: white !important;
+  box-shadow: none;
+}
+footer.footer_header ul li a {
+  color: rgb(173, 173, 173) !important;
+}
+footer.footer_header ul li a img {
+  background: white !important;
+}
+
+.withdraw .container .title {
+  margin-bottom: 0;
+  color: black;
+}
+.withdraw .container .header {
+  margin-bottom: 0;
+}
+.withdraw .container button.btn.btn-success.next.title {
+  color: white;
+  width: 100%;
+  margin-top: 1.5rem;
+  border-radius: 7px;
+}
+.withdraw .container .header_r {
+  margin-bottom: 1.5rem;
+}
+.withdraw .container .header_r .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.withdraw .container .header_r .bottom {
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 7px;
+  background-color: #bd7d48;
+}
+.withdraw .container .header_r .bottom .header {
+  color: white;
+}
+.withdraw .container .header_r .bottom p.title {
+  margin-bottom: 1.5rem;
+  color: white;
+}
+.withdraw .container .header_r .bottom input {
+  border-radius: 7px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  outline: none;
+  padding: 1rem;
+  width: 100%;
+}
+.withdraw .container .header_r .bottom input::-moz-placeholder {
+  color: white;
+}
+.withdraw .container .header_r .bottom input::placeholder {
+  color: white;
+}
+.withdraw .container .header_r .bottom .exchange_wrapper {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+.withdraw .container .box_r {
+  margin-bottom: 1.5em;
+  background: white;
+  border-radius: 7px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.withdraw .container .box_r .btn {
+  border-radius: 25px;
+}
+.withdraw .container .box_r.active {
+  border: 2px solid green;
+}
+.withdraw .container .reminder {
+  background-color: white;
+  border-radius: 7px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+.withdraw .container .reminder .header {
+  margin-bottom: 1.5rem;
+}
+
+@keyframes notification_anime {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateX(-150rem);
+  }
+}/*# sourceMappingURL=withdraw.css.map */

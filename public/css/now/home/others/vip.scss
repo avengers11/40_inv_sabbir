@@ -1,0 +1,57 @@
+#vip{
+    .not_purchess{
+        background: #ffe7c6;
+        padding: var(--size3) var(--size4);
+        margin-block-end: var(--size4);
+        box-shadow: 0 1px 2px var(--balance4);
+        border-radius: var(--size2);
+        border: 3px dotted var(--text-color);
+    }
+    // vip_wrapper
+    .vip_wrapper{
+        .vip{
+            padding: var(--size3) var(--size4);
+            margin-block-end: var(--size4);
+            background-color: var(--abalance1);
+            border-radius: var(--size2);
+            box-shadow: 0 1px 2px var(--balance4);
+
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10px;
+            img{
+                width: 70px;
+                height: 70px;
+                border-right: 2px solid #dddd;
+                padding-right: 10px;
+            }
+            .left{
+                h4{
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                .btn{
+                    padding: 10px;
+                    background: #58eeff;
+                    border-radius: var(--size2);
+                    margin-top: 10px;
+                }
+                button.btn.btn-success.text-light.title {
+                    background: green !important;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+// is dark
+.is-dark{
+    #vip .vip_wrapper .vip .left .btn{
+        background: #0073ad;
+    }
+    #vip .not_purchess{
+        background-color: var(--abalance1);
+    }
+}

@@ -1,0 +1,178 @@
+#company_section{
+    /*
+    |---------------
+    | SLider CSS ST
+    |---------------
+    */
+    .swiper {
+        width: 100%;
+        height: 30vh;
+    }
+    .swiper-slide {
+        border-radius: 7px;
+        text-align: center;
+        font-size: 18px;
+        background: white;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: var(--size3);
+        background-color: var(--abalance1);
+        border-radius: var(--size2);
+        box-shadow: 0 1px 2px var(--balance4);
+
+    }
+    /*
+    |---------------
+    | SLider CSS END
+    |---------------
+    */
+
+
+    /*
+    |---------------
+    | menu btn  st
+    |---------------
+    */
+    .container{
+        .menu_btn_wrapper{
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+            border: 2px groove var(--primary);
+            border-radius: var(--border-radius);
+            .menu_btn_wrapper_header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 2px groove var(--primary);
+                margin-bottom: 1rem;
+                padding: 0.8rem;
+            }
+            .menu_btn_wrapper_all_menu{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 0.5rem;
+                padding: 0.8rem;
+                .menu_btn_wrapper_box{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    img{
+                        height: 6rem;
+                        width: 6rem;
+                        border-radius: 50%;
+                        padding: 2px;
+                        border: 2px groove var(--primary);
+                    }
+                }
+            }
+        }
+    }
+    /*
+    |---------------
+    | menu btn  end
+    |---------------
+    */
+
+
+    /*
+    |---------------
+    | menu btn  st
+    |---------------
+    */
+    .container{
+        .paclages_card_wrapper{
+            margin-top: 40px;
+            border: 2px groove var(--primary);
+            padding: var(--size3);
+            background-color: var(--abalance1);
+            border-radius: var(--size2);
+            box-shadow: 0 1px 2px var(--balance4);
+            .paclages_card_wrapper_header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 2px groove var(--primary);
+                margin-bottom: 1rem;
+                padding: 0.8rem;
+            }
+            .paclages_card_wrapper_footer{
+                .cards{
+                    margin-bottom: 2rem;
+                    padding: 0.8rem;
+                    img{
+                        width: 100%;
+                        border-radius: 7px;
+                    }
+                }
+                .cards:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    /*
+    |---------------
+    | menu btn  end
+    |---------------
+    */
+
+
+    /*
+    |---------------
+    | Info cont st
+    |---------------
+    */
+    .container{
+        .all_info_wrapper{
+            margin-top: 2.5rem;
+            border: 2px groove var(--primary);
+            border-radius: var(--border-radius);
+            .all_info_wrapper_header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 2px groove var(--primary);
+                margin-bottom: 1rem;
+                padding: 0.8rem;
+            }
+            .all_info_wrapper_footer{
+                flex-wrap: wrap;
+                padding: 0.8rem;
+                gap: 0.5rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    /*
+    |---------------
+    | Info cont end
+    |---------------
+    */
+}
+
+// animation
+@keyframes notification_anime {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform : translateX(-150rem);
+    }
+}

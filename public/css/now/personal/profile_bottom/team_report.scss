@@ -1,0 +1,92 @@
+#team_section{
+    .container{
+        // header_mr end
+
+        // team_report_wrapper
+        .team_report_wrapper{
+            border-radius: var(--border-radius);
+            background: linear-gradient(#19aeff, #0164e1);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: var(--size3);
+            background-color: var(--abalance1);
+            border-radius: var(--size2);
+            li{
+                border: 1px solid var(--border-color);
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 0.7rem;
+                .header{
+                    color: white;
+                    text-align: center;
+                }
+            }
+        }
+
+        // body_mr st
+        .body_mr{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            backdrop-filter: blur(20px);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            .items{
+                padding: var(--size3);
+                background-color: var(--abalance1);
+                border-radius: var(--size2);
+                box-shadow: 0 1px 2px var(--balance4);
+                .title{
+                    align-items: center;
+                }
+            }
+            .active{
+                background: var(--primary);
+                .header{
+                    color: white;
+                }
+            }
+        }
+        // body_mr end
+
+        // footer_mr st
+        .footer_mr{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 1.5rem;
+            margin-top: 2.5rem;
+            .items{
+                padding: var(--size3);
+                background-color: var(--abalance1);
+                border-radius: var(--size2);
+                box-shadow: 0 1px 2px var(--balance4);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .left{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    .left_left{
+                        img{
+                            width: 55px;
+                            height: 55px;
+                            border-radius: 50%;
+                            border: 3px solid var(--primary);
+                        }
+                    }
+                }
+
+            }
+        }
+        // footer_mr end
+
+    }
+}

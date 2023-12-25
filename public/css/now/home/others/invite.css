@@ -1,0 +1,50 @@
+#invite_section .container .qr_code {
+  width: 99px;
+  margin: auto;
+  margin-top: 10px;
+}
+#invite_section .container .copy_invitation_code_wrapper {
+  padding: var(--size3) var(--size4);
+  background-color: var(--abalance1);
+  border-radius: var(--size2);
+  box-shadow: 0 1px 2px var(--balance4);
+  cursor: pointer;
+}
+#invite_section .container .copy_invitation_code_wrapper .top {
+  margin-bottom: 20px;
+}
+#invite_section .container .copy_invitation_code_wrapper .body .text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#invite_section .container .copy_invitation_code_wrapper .body .text input {
+  border: 1px solid;
+  padding: 10px;
+  outline: none;
+  border-radius: 7px 0 0 7px;
+  border-right: 0;
+}
+#invite_section .container .copy_invitation_code_wrapper .body .text .copy_my_btn {
+  padding: 10px;
+  background: #15A1FA;
+  color: white;
+  border-radius: 0 7px 7px 0;
+}
+#invite_section .container .paclages_card_wrapper {
+  margin-top: 40px;
+  padding: var(--size3) var(--size4);
+  background-color: var(--abalance1);
+  border-radius: var(--size2);
+  box-shadow: 0 1px 2px var(--balance4);
+  cursor: pointer;
+}
+#invite_section .container .paclages_card_wrapper .paclages_card_wrapper_header {
+  margin-bottom: 20px;
+}
+#invite_section .container .paclages_card_wrapper .paclages_card_wrapper_footer .cards {
+  margin-bottom: 20px;
+}
+#invite_section .container .paclages_card_wrapper .paclages_card_wrapper_footer .cards .header {
+  margin-bottom: 7px;
+}/*# sourceMappingURL=invite.css.map */

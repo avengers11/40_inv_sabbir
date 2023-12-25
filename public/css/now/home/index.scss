@@ -1,0 +1,14 @@
+.index{
+    margin-bottom: 50px;
+    .container{
+        .body_mr{
+            backdrop-filter: blur(30px);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            img{
+                width: 100%;
+                border-radius: var(--border-radius);
+            }
+        }
+    }
+}

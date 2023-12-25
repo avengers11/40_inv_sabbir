@@ -1,0 +1,10 @@
+.information {
+  margin-bottom: 5rem;
+}
+.information .container .box {
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}/*# sourceMappingURL=info.css.map */

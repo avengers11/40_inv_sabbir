@@ -1,0 +1,31 @@
+.bank_settings{
+    .container{
+        .title{
+            margin-bottom: 0;
+            color: black;
+        }
+        .main-header{
+            padding: 1rem;
+            text-align: center;
+            border-radius: 7px;
+            margin-top: 1.5rem;
+            margin-bottom: 3rem;
+            backdrop-filter: blur(30px);
+            border: 1px solid var(--border-color);
+        }
+        .header_r{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            margin-bottom: 1.5rem;
+            .btn{
+                width: 100%;
+            }
+        }
+        .bank{
+            background: white;
+            border-radius: 7px;
+            padding: 1rem;
+        }
+    }
+}

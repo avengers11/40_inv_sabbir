@@ -1,0 +1,11 @@
+.information{
+    margin-bottom: 5rem;
+    .container{
+        .box{
+            backdrop-filter: blur(30px);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+        }
+    }
+}

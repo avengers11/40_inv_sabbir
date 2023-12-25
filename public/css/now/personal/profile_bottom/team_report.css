@@ -1,0 +1,76 @@
+#team_section .container .team_report_wrapper {
+  border-radius: var(--border-radius);
+  background: linear-gradient(#19aeff, #0164e1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: var(--size3);
+  background-color: var(--abalance1);
+  border-radius: var(--size2);
+}
+#team_section .container .team_report_wrapper li {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+#team_section .container .team_report_wrapper li .header {
+  color: white;
+  text-align: center;
+}
+#team_section .container .body_mr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+}
+#team_section .container .body_mr .items {
+  padding: var(--size3);
+  background-color: var(--abalance1);
+  border-radius: var(--size2);
+  box-shadow: 0 1px 2px var(--balance4);
+}
+#team_section .container .body_mr .items .title {
+  align-items: center;
+}
+#team_section .container .body_mr .active {
+  background: var(--primary);
+}
+#team_section .container .body_mr .active .header {
+  color: white;
+}
+#team_section .container .footer_mr {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+#team_section .container .footer_mr .items {
+  padding: var(--size3);
+  background-color: var(--abalance1);
+  border-radius: var(--size2);
+  box-shadow: 0 1px 2px var(--balance4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#team_section .container .footer_mr .items .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+#team_section .container .footer_mr .items .left .left_left img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+}/*# sourceMappingURL=team_report.css.map */

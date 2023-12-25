@@ -1,0 +1,51 @@
+#persona_info {
+  margin-bottom: 40px;
+}
+#persona_info .container .header_mr .main-header {
+  text-align: center;
+  display: block;
+  margin-top: 2rem;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 7px;
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  z-index: 1;
+}
+#persona_info .container .body_mr .row .col-6 {
+  margin-bottom: 20px;
+}
+#persona_info .container .body_mr .row img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 5px solid var(--primary);
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#persona_info .container .body_mr .row input {
+  width: 100%;
+  border-radius: var(--border-radius) var(--border-radius);
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: var(--size3);
+  background-color: var(--abalance1);
+  border-radius: var(--size2);
+  box-shadow: 0 1px 2px var(--balance4);
+  cursor: pointer;
+}
+#persona_info .container .body_mr .row .title {
+  margin: 0 !important;
+}
+#persona_info .container .body_mr .row button.btn.btn-success.title {
+  padding: var(--size3);
+  background: #16A4FB;
+  color: white;
+  border-radius: var(--size2);
+}/*# sourceMappingURL=profile_info.css.map */

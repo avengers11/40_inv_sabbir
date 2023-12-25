@@ -1,0 +1,47 @@
+#vip .not_purchess {
+  background: #ffe7c6;
+  padding: var(--size3) var(--size4);
+  margin-block-end: var(--size4);
+  box-shadow: 0 1px 2px var(--balance4);
+  border-radius: var(--size2);
+  border: 3px dotted var(--text-color);
+}
+#vip .vip_wrapper .vip {
+  padding: var(--size3) var(--size4);
+  margin-block-end: var(--size4);
+  background-color: var(--abalance1);
+  border-radius: var(--size2);
+  box-shadow: 0 1px 2px var(--balance4);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+#vip .vip_wrapper .vip img {
+  width: 70px;
+  height: 70px;
+  border-right: 2px solid rgba(221, 221, 221, 0.8666666667);
+  padding-right: 10px;
+}
+#vip .vip_wrapper .vip .left h4 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#vip .vip_wrapper .vip .left .btn {
+  padding: 10px;
+  background: #58eeff;
+  border-radius: var(--size2);
+  margin-top: 10px;
+}
+#vip .vip_wrapper .vip .left button.btn.btn-success.text-light.title {
+  background: green !important;
+  color: white;
+}
+
+.is-dark #vip .vip_wrapper .vip .left .btn {
+  background: #0073ad;
+}
+.is-dark #vip .not_purchess {
+  background-color: var(--abalance1);
+}/*# sourceMappingURL=vip.css.map */

@@ -1,0 +1,238 @@
+.accounts{
+    .container{
+        position: relative;
+        .logo{
+            height: 8rem;
+            display: block;
+            margin: auto;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        // header_mr
+        .header_mr{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1.5rem;
+            p.title.site_name {
+                font-size: 25px;
+                color: orange;
+                font-weight: bold;
+                font-family: cursive;
+                letter-spacing: 2px;
+            }
+        }
+        p.title.mb-0{
+            color: black;
+        }
+        // form
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 3rem;
+            margin-top: 3.5rem;
+            .error{
+                width: 90%;
+                align-items: start;
+                color: rgb(218, 16, 16);
+            }
+            .box{
+                width: 90%;
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                margin-top: 1rem;
+                i{
+                    background: #2387ff;
+                    padding: 21px;
+                    border-radius: 7px;
+                    color: white;
+                }
+                input{
+                    width: 100%;
+                    border: none;
+                    padding: 1rem;
+                    outline: none;
+                    background: transparent;
+                    border-bottom: 1px solid #ddd;
+                }
+                .submit, #nex_button{
+                    background: #ffa500;
+                    padding: 1rem;
+                    border-radius: 7px;
+                    color: white;
+                    text-align: center;
+                    font-weight: bold;
+                    width: 100%;
+                    cursor: pointer;
+                }
+            }
+            .box:nth-child(1){
+                margin-top: 0 !important;
+            }
+
+            .box_footer{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .title{
+                    color: black !important;
+                }
+                i{
+                    background: none;
+                }
+            }
+        }
+        // camera
+        .camera{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 0.5rem;
+            height: 100vh;
+            video{
+                width: 35rem;
+                height: 35rem;
+            }
+            #canvas {
+                display: none;
+            }
+        }
+        // idcard
+        .idcard{
+            .id-card-holder {
+                width: 225px;
+                padding: 4px;
+                margin: 0 auto;
+                background-color: var(--primary);
+                border-radius: 5px;
+                position: relative;
+            }
+            .id-card-holder:after {
+                content: "";
+                width: 7px;
+                display: block;
+                background-color: #0a0a0a;
+                height: 100px;
+                position: absolute;
+                top: 105px;
+                border-radius: 0 5px 5px 0;
+            }
+            .id-card-holder:before {
+                content: "";
+                width: 7px;
+                display: block;
+                background-color: #0a0a0a;
+                height: 100px;
+                position: absolute;
+                top: 105px;
+                left: 214px;
+                border-radius: 5px 0 0 5px;
+            }
+            .id-card {
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 0 1.5px 0px #b9b9b9;
+            }
+            .id-card img {
+                margin: 0 auto;
+            }
+            .header img {
+                width: 10rem;
+                height: 10rem;
+                margin-top: 1.5rem;
+                border-radius: 7px;
+            }
+            .photo img {
+                width: 80px;
+                margin-top: 15px;
+            }
+            h2 {
+                font-size: 2rem;
+                margin: 5px 0;
+                color: var(--primary);
+            }
+            h3 {
+                font-size: 1.5rem;
+                margin: 2.5px 0;
+                font-weight: 300;
+                color: black;
+            }
+            .qr-code img {
+                width: 50px;
+            }
+            p {
+                font-size: 1rem;
+                margin: 2px;
+                color: black;
+            }
+            .id-card-hook {
+                background-color: var(--primary);
+                width: 70px;
+                margin: 0 auto;
+                height: 15px;
+                border-radius: 5px 5px 0 0;
+            }
+            .id-card-hook:after {
+                content: "";
+                background-color: white;
+                width: 47px;
+                height: 6px;
+                display: block;
+                margin: 0px auto;
+                position: relative;
+                top: 6px;
+                border-radius: 4px;
+            }
+            .id-card-tag-strip {
+                width: 45px;
+                height: 40px;
+                background-color: #d9300f;
+                margin: 0 auto;
+                border-radius: 5px;
+                position: relative;
+                top: 9px;
+                z-index: 1;
+                border: 1px solid #a11a00;
+            }
+            .id-card-tag-strip:after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #a11a00;
+                position: relative;
+                top: 10px;
+            }
+            .id-card-tag {
+                width: 0;
+                height: 0;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                border-top: 100px solid #d9300f;
+                margin: -10px auto -30px auto;
+            }
+            .id-card-tag:after {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-top: 100px solid #041246;
+                margin: -10px auto -30px auto;
+                position: relative;
+                top: -130px;
+                left: -50px;
+            }
+        }
+
+    }
+}

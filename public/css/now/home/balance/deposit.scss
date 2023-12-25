@@ -1,0 +1,55 @@
+.deposit{
+    margin-bottom: 40px;
+    .header_mr{
+        padding: var(--size3) var(--size4);
+        background-color: var(--abalance1);
+        border-radius: var(--size2);
+        box-shadow: 0 1px 2px var(--balance4);
+        width: 100%;
+        margin-bottom: 40px;
+        h2{
+            text-align: center;
+        }
+    }
+    .form_box{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 20px;
+        input, select{
+            padding: var(--size3) var(--size4);
+            background-color: var(--abalance1);
+            border-radius: var(--size2);
+            box-shadow: 0 1px 2px var(--balance4);
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+    }
+    button.submit {
+        padding: 10px;
+        background: #139CF8;
+        border-radius: 7px;
+        width: 40%;
+        text-align: center;
+        color: white;
+    }
+    .copy_our_num{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .btn-success{
+            border-radius: 0 7px 7px 0;
+            padding: 10px;
+            background: green;
+            color: white;
+            cursor: pointer;
+        }
+        input{
+            border-radius: 7px 0 0 7px !important;
+        }
+    }
+}
