@@ -38,13 +38,8 @@
                         @foreach ($user_account as $item)
                             <tr>
                                 <td>{{$item['id']}}</td>
-                                @if ($item['type'] == "Bank Card")
-                                    <td>{{$item['number']}}</td>
-                                    <td>{{$item['amount']*$adminData['dollar_rate']}}৳</td>
-                                @else
-                                    <td>Crypto Payment</td>
-                                    <td>{{$item['amount']}}$</td>
-                                @endif
+                                <td>{{$item['number']}}</td>
+                                <td>{{$item['amount']}}৳</td>
                                 <td>{{$item['method']}}</td>
                                 <td>{{$item['tranx']}}</td>
                                 <td>

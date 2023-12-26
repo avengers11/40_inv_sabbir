@@ -45,6 +45,7 @@ class CreateUsersTable extends Migration
             $table->string('online_time')->default('00');
             $table->string('task')->default('0');
             // total
+            $table->string('referCommission')->default('00');
             $table->string('totalDeposit')->default('00');
             $table->string('totalWithdraw')->default('00');
             $table->string('totalTeamRevenue')->default('00');

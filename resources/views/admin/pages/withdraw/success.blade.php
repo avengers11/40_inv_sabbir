@@ -36,15 +36,10 @@
                         @foreach ($user_account as $item)
                             <tr>
                                 <td>{{$item['id']}}</td>
-                               
-                                    @if ($item['method'] == "TRC20")
-                                        <td>{{$item['amount']."$ , ".$adminData['withdraw_charge'].'% charge'}} = @php echo $item['amount']-(($item['amount']*$adminData['withdraw_charge'])/100).'$' @endphp</td>
-                                    @else
-                                        <td>{{$item['amount']*$adminData['dollar_rate']."৳ , ".$adminData['withdraw_charge'].'% charge'}} = @php echo ($item['amount']-(($item['amount']*$adminData['withdraw_charge'])/100))*$adminData['dollar_rate'].'৳' @endphp</td>
-                                    @endif
-
+                                <td>{{$item['amount']."৳ , ".$adminData['withdraw_charge'].'% charge'}} = @php echo ($item['amount']-(($item['amount']*$adminData['withdraw_charge'])/100)).'৳' @endphp</td>
                                 <td>{{$item['method']}}</td>
                                 <td>{{$item['address']}}</td>
+                                <td>{{$item['created_at']}}</td>
                                 <td>
                                     @if($item['online_time'] > time())
                                         <span class="btn btn-success">Online</span>

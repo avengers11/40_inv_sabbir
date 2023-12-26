@@ -37,16 +37,10 @@
                         @foreach ($user_account as $item)
                             <tr>
                                 <td>{{$item['id']}}</td>
-                               
-                                @if ($item['method'] == "TRC20")
-                                    <td>{{$item['amount']."$ , ".$adminData['withdraw_charge'].'% charge'}} = @php echo $item['amount']-(($item['amount']*$adminData['withdraw_charge'])/100).'$' @endphp</td>
-                                @else
-                                    <td>{{$item['amount']*$adminData['dollar_rate']."৳ , ".$adminData['withdraw_charge'].'% charge'}} = @php echo ($item['amount']-(($item['amount']*$adminData['withdraw_charge'])/100))*$adminData['dollar_rate'].'৳' @endphp</td>
-                                @endif
-                               
+                                <td>{{$item['amount']."৳ , ".$adminData['withdraw_charge'].'% charge'}} = @php echo ($item['amount']-(($item['amount']*$adminData['withdraw_charge'])/100)).'৳' @endphp</td>
                                 <td>{{$item['method']}}</td>
                                 <td>{{$item['address']}}</td>
-                               <td>{{$item['created_at']}}</td>
+                                <td>{{$item['created_at']}}</td>
                                 <td>
                                     <a onclick="return confirm('You want to reject this item??')" href="{{route('api_withdraw_rejected', ['id' => $item['id']])}}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
                                     <a onclick="return confirm('You want to accept this item??')" href="{{route('api_withdraw_success', ['id' => $item['id']])}}" class="btn btn-success"><i class="fa-solid fa-square-check"></i></a>

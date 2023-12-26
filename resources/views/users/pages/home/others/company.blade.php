@@ -16,7 +16,7 @@
     <img class="cover" src="{{ asset('images\icons\cover_img.jpeg') }}" alt="">
     <div class="content">
         <img class="profile" src="{{asset("images/site/".adminData()['logo'])}}" alt="">
-        <h2 class="header">Company Profile</h2>
+        <h2 class="header">S.F Investment Company</h2>
         <p class="title">{{ $like }} Following</p>
         <div class="btn_wrapper">
             <Button class="contact">Contact Us</Button>
