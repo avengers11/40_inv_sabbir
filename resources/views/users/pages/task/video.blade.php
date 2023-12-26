@@ -47,7 +47,7 @@
 </div>
 <!-- script -->
 <script>
-    const urls = {
+    const urlsw = {
         "get_video" : '{{ route('api_task_get_video') }}',
         "id" : '{{ $id }}'
     }

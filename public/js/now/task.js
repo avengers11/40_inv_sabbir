@@ -1,8 +1,8 @@
-$(document).ready(()=>{
+$(document).ready(() => {
     // get_user_data();
 })
 
-$('.task_next').click(function(){
+$('.task_next').click(function () {
     $('.collect_earning').html('Collect Your Earning');
     $('.task_next').addClass('btn-primary');
     $('.task_next').removeClass('btn-danger');
@@ -11,12 +11,12 @@ $('.task_next').click(function(){
     $('.task_next').attr('disabled', true);
     // ajax
     $.ajax({
-        "url" : urls.get_video,
-        "method" : "POST",
-        'data' : {
-            "videoID" : urls.id
+        "url": urlsw.get_video,
+        "method": "POST",
+        'data': {
+            "videoID": urls.id
         },
-        success:function(data){
+        success: function (data) {
             console.log(data);
             // video add
             let random_data = data.data;
@@ -24,19 +24,19 @@ $('.task_next').click(function(){
             $('.video_wrapper .video').removeClass('d-none');
             $('.video_wrapper .img').addClass('d-none');
 
-            $('.video_wrapper .video').attr('src', 'http://127.0.0.1:8000/video/task_video/'+random_data.video);
+            $('.video_wrapper .video').attr('src', 'http://127.0.0.1:8000/video/task_video/' + random_data.video);
             $('.task_next').html('Working...');
             $('.task_next').addClass('btn-success');
             $('.task_next').removeClass('btn-primary');
             $('.task_next').removeClass('btn-site');
             // collect commission
             var video_play = document.getElementById("myVideo");
-            video_play.addEventListener('loadeddata', function() {
+            video_play.addEventListener('loadeddata', function () {
                 video_play.play();
                 setTimeout(() => {
                     var x = setInterval(() => {
-                        $('.task_next').html(random_data.time-Number(video_play.currentTime).toFixed(0)+'s');
-                        if(Number(video_play.currentTime).toFixed(0) > Number(random_data.time)){
+                        $('.task_next').html(random_data.time - Number(video_play.currentTime).toFixed(0) + 's');
+                        if (Number(video_play.currentTime).toFixed(0) > Number(random_data.time)) {
                             // btn relatet
                             $('.task_next').attr('disabled', false);
                             $('.task_next').html('Next Video');
@@ -60,23 +60,23 @@ $('.task_next').click(function(){
 
 
 // collect commission
-$('.collect_commission').click(()=>{
+$('.collect_commission').click(() => {
     $('#collect_commission').html('Loadding...');
     $('.collect_commission').prop('disabled', true);
     // ajax
     $.ajax({
-        "url" : urls.get_commission,
-        "method" : "POST",
-        success:function(data){
+        "url": urlsw.get_commission,
+        "method": "POST",
+        success: function (data) {
             // get_user_data();
-            if(data.st == true){
+            if (data.st == true) {
                 $('#collect_commission').html('Success');
                 setTimeout(() => {
                     $('#collect_commission').html('Collect Your Commission');
                     $('.collect_your_commission').slideUp(500);
                     $('.collect_commission').prop('disabled', false);
                 }, 1000);
-            }else{
+            } else {
                 $('#collect_commission').html(data.msg);
                 $('.collect_commission').prop('disabled', true);
             }
@@ -86,7 +86,7 @@ $('.collect_commission').click(()=>{
 })
 
 // close
-$('button.btn.btn-danger.title').click(()=>{
+$('button.btn.btn-danger.title').click(() => {
     $('.hidden_map_search').addClass('d-none');
     $('.task_next').html('Next Task');
 });
@@ -95,13 +95,13 @@ $('button.btn.btn-danger.title').click(()=>{
 const get_user_data = () => {
     // ajax
     $.ajax({
-        "url" : url+"api/users/task/get_users_data",
-        "method" : "POST",
-        success:function(data){
-            $('#user_total_amount').html(data.data.totalAmount+"$");
-            $('#user_today_income').html(data.data.todayIncome+"$");
+        "url": url + "api/users/task/get_users_data",
+        "method": "POST",
+        success: function (data) {
+            $('#user_total_amount').html(data.data.totalAmount + "$");
+            $('#user_today_income').html(data.data.todayIncome + "$");
             $('#user_task').html(data.data.task);
-            if(data.data.task < 1){
+            if (data.data.task < 1) {
                 $('.task_next').attr('disabled', true);
                 $('.task_next').html('No More Task Today!');
             }
