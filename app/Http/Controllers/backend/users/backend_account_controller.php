@@ -115,6 +115,9 @@ class backend_account_controller extends Controller
             // 5th gen
             $db->gen5th = $invitorData['gen4th'];
 
+            // nextWithdraw
+            $db->nextWithdraw = 10;
+
             // invitor end
             $db->csrf = $csrf;
             $db->save();
@@ -140,6 +143,10 @@ class backend_account_controller extends Controller
             $db->nextWithdraw = $adminData['nextWIthdraw'];
             $db->uniqeID = $_SERVER['HTTP_USER_AGENT'];
             $db->referCommission = "1";
+
+            // nextWithdraw
+            $db->nextWithdraw = 10;
+
             if ($db->save()) {
                 $req->session()->put('csrf', $csrf);
                 return response()->json(['st' => true]);

@@ -14,7 +14,7 @@ $('.task_next').click(function () {
         "url": urlsw.get_video,
         "method": "POST",
         'data': {
-            "videoID": urls.id
+            "videoID": urlsw.id
         },
         success: function (data) {
             console.log(data);
@@ -24,7 +24,7 @@ $('.task_next').click(function () {
             $('.video_wrapper .video').removeClass('d-none');
             $('.video_wrapper .img').addClass('d-none');
 
-            $('.video_wrapper .video').attr('src', 'http://127.0.0.1:8000/video/task_video/' + random_data.video);
+            $('.video_wrapper .video').attr('src', url + 'video/task_video/' + random_data.video);
             $('.task_next').html('Working...');
             $('.task_next').addClass('btn-success');
             $('.task_next').removeClass('btn-primary');
